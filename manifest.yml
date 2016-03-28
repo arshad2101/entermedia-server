@@ -1,0 +1,8 @@
+applications:
+- disk_quota: 512M
+  host: entermedia
+  name: entermedia
+  path: entermedia.war
+  domain: mybluemix.net
+  instances: 1
+  memory: 1024M

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="default" name="entermedia-server">
 
-  <target name="default" depends="clean, update-dependencies, compile, jar, junit, javadoc, source, war"/>
+  <!--<target name="default" depends="clean, update-dependencies, compile, jar, junit, javadoc, source, war"/>-->
+   <target name="default" depends="clean, update-dependencies, compile, jar, source, war"/>
     <target name="dependency" depends="default"/>
     
 	<property name="appname" value="${ant.project.name}"/>
@@ -305,7 +306,7 @@
  	</copy>	
 
  	<move overwrite="true" file="${deployDir}/builds/${versionedApp}.war" 
-        tofile="${deployDir}/ROOT.war"/>
+        tofile="entermedia.war"/>
   	
   </target>
 
